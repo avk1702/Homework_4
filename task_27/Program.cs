@@ -6,8 +6,9 @@ int SummAll (int number)
   int sum = 0;
     while (number > 0)
     {
-      sum += number % 10;
-      number = number / 10;
+    int i = number % 10;
+    number = number / 10;
+    sum = sum + i;
     }
     return sum;
 } 
